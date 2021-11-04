@@ -1,80 +1,47 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet,Image,TouchableOpacity,ScrollView ,Text, View } from 'react-native';
-import Casioshop from './Casio';
-import Cavemanshop from './Cavemanshop';
-import Bulgarishop from './Bulgari';
-import Rolexshop from './Rolexshop';
+import React, { Component } from 'react';
+import { Button, View, Text,Image,style } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-
-export default function Home({navigation}) {
-  return (
-    <View style={styles.container}>
-      <View style={{padding: 20}}>
-        <Text style={{fontSize:30}}>Welcome Bulgari_dubs!</Text>
-      </View>
-        <View style ={{backgroundColor:'#a66874',padding:8,borderRadius:30}}>
-        <Text style={{fontSize:25, color:'white',fontWeight: 'bold'}}>Choose Your Brand</Text>
-        </View>
-      <View>
-        <TouchableOpacity onPress={() => navigation.navigate('Bulgari ')}>
-        <Image 
-            fadeDuration={1000} 
-        style={{width:370,height:130}}
-        resizeMode='contain'
-        source={require('../assets/Bulgari.jpg')}/>
-        <Text style={{alignSelf:'center'}}>
-          Bulgari
-        </Text>
-        </TouchableOpacity>
-      </View>
-        <View>
-          <TouchableOpacity onPress={() => navigation.navigate('Rolex')}>
-          <Image
-            fadeDuration={1000} 
-            style={{width:370,height:130}}
-            resizeMode='contain'
-            source={require('../assets/kk.jpg')}/>
-        <Text style={{alignSelf:'center'}}>
-          Rolex
-        </Text>
-          </TouchableOpacity>
-        </View >
-      <View>
-        <TouchableOpacity onPress={() => navigation.navigate('Caveman')}>
-        <Image 
-            fadeDuration={1000} 
-            style={{width:370,height:130,}}
-            resizeMode='contain'
-            source={require('../assets/kk5.jpg')}/>
-        <Text style={{alignSelf:'center'}}>
-          Caveman
-        </Text>
-        </TouchableOpacity>
-      </View>
-      <View>
-        <TouchableOpacity onPress={() => navigation.navigate('Casio')}>
-        <Image 
-            fadeDuration={1000} 
-            style={{width:370,height:130}}
-            resizeMode='contain'
-            source={require('../assets/kk2.jpg')}/>
-        <Text style={{alignSelf:'center'}}>
-          Casioshop
-        </Text>
-        </TouchableOpacity>
-      </View>
-      
-      <StatusBar style="auto" />
+const Home=({navigation})=>{ 
+  return(
+    <View styles={{flex:1,justifyContent:'center',alignItems:'center'}}>
+      <Image styles={styles.image} source={require("../assets/kk.jpg")} />
+      <Button title="Sales Mode" onPress={() =>(navigation.navigate('Login'))} />
+      <Text>
+        So this application is about seling of writ watches 
+        cash would not be returned 
+        Agree on term nd conditions to continue
+      </Text>
+      <Text>
+      Terms of service are the legal agreements between a service provider and a person who wants to use that service. The person must agree to abide by the terms of service in order to use the offered service. Terms of service can also be merely a disclaimer, especially regarding the use of websites. Wikipedia
+      </Text>
+     
+      <Button title='agree to terms and condtion' onPress={() =>(navigation.navigate('Login'))}/>
+    
     </View>
-  );
+    
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
+export default Home
+
+
+const styles=StyleSheet.create({
+  flex:1,
+  height:8,
+  width:60,
+  
+  
+  image: {
+    flex:1,
+    marginTop:5,
+    marginBottom:50,
+    width:60,
+    marginBottom:60,
+    paddingBottom:50,
+
   },
+  
 });
