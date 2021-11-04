@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text,FlatList, View,TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text,FlatList, View,TouchableOpacity, Image, TextInput } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 
 const WATCHrolex =  [{
   id: "166800C_A_107X1",
@@ -55,7 +57,27 @@ const renderItem = ({ item }) => (
 
 export default function Rolexshop() {
   return (
-    <View style={styles.container}>
+     <View style={styles.container}>
+      <View style={{
+        flexDirection:'row',
+        backgroundColor:'#e8e9eb',
+        marginTop:30,
+        marginBottom:30,
+        padding:20,
+        borderRadius:30,
+        width:350}}>
+        <View stlye={{flex:3,padding:20}}>
+        <FontAwesome name="search" size={24} color="black" />
+        </View>
+        <View style={{flex:7,alignContent:'flex-start'}}>
+        <TextInput style={{color:'black'}} placeholder='Search here'/>
+        </View>
+        <TouchableOpacity>
+        <View style={{flex:1}}>
+         <Feather name="menu" size={24} color="black" />
+        </View>
+        </TouchableOpacity>
+      </View>
       <FlatList
         data={WATCHrolex}
         renderItem={renderItem}
@@ -69,7 +91,8 @@ export default function Rolexshop() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'grey',
+    borderRadius:5,
     alignItems: 'center',
     justifyContent: 'center',
   },

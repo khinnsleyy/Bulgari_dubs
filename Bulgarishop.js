@@ -6,37 +6,37 @@ const WATCHbulgari =  [{
   id: "166800C_A_107X1",
   title: "MAFIA CITY",
   price: "$110",
-  picture:'https://www.bulgari.com/en-ae/103'
+  picture:'https://media2.bulgari.com/f_auto,q_auto/production/dw137cf756/images/images/1234057.png'
 },
 {
   id: "M7652_D_08X1",
   title: "OCTO LORENGNILE WATCH",
   price: "$55",
-  picture:'https://www.bulgari.com/en-ae/102560.html'
+  picture:'https://media2.bulgari.com/f_auto,q_auto/production/dwe9211754/images/images/484049.png'
 },
 {
   id: "171546C_A_107X1",
   title: "BULGARI 2",
   price: "$120",
-  picture:'https://www.bulgari.com/en-ae/102212.html'
+  picture:'https://media2.bulgari.com/f_auto,q_auto/production/dw78e15cee/images/images/210370.png'
 },
 {
   id: "162054C_A_107X1",
   title: "HAUTE HORLOGERIE WATCH",
   price: "$85",
-  picture:'https://www.bulgari.com/en-ae/101933.html'
+  picture:'https://media2.bulgari.com/f_auto,q_auto/production/dw17493ee2/images/images/224033.png'
 },
 {
   id: "168817C_A_107X1",
   title: "OCTO ROMA WATCH",
   price: "$100",
-  picture:'https://www.bulgari.com/en-ae/102702.html'
+  picture:'https://media2.bulgari.com/f_auto,q_auto/production/dw1ecaffe7/images/images/1251396.png'
 },
 {
   id: "159573C_A_107X1",
   title: "BULGARI BULGARI WATCH",
   price: "$75",
-  picture:'https://www.bulgari.com/en-ae/102430.html'
+  picture:'https://media2.bulgari.com/f_auto,q_auto/production/dwf798b080/images/images/1153919.png'
 },
 ];
 

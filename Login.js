@@ -1,24 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TextInput,Button,View,TouchableOpacity, ImageBackground } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
-import { FontAwesome } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome,AntDesign} from '@expo/vector-icons';
+import { Octicons } from '@expo/vector-icons';
+
+
 
 
 export default function Login({navigation}) {
   return (
     
     <ImageBackground 
-      blurRadius={5}
+      blurRadius={0.5}
       style={styles.container}
-      justifyContent={'space-evenly'}
-      source={require("../assets/kk4.jpg")}>
+      source={require("../assets/p7.jpg")}>
 
       <View>
         <Text style={{ fontSize: 40,
-          color: 'white', fontWeight: 'bold',
-          paddingBottom: 20 }}>Hello Bulgari_dubs!
+          color: 'grey', fontWeight: 'bold',
+          paddingBottom: 20 }}>Bulgaridubs!<Octicons name="watch" size={30} color="grey" />
         </Text>
         </View>
         <View style= {styles.input}>
@@ -40,20 +40,19 @@ export default function Login({navigation}) {
       width: 370,
       marginTop:80,
       elevation: 5000}}>
-        
-        <Button    
+
+        <Button 
             onPress={() => navigation.navigate('Home')}
-            title = "SIGN IN"
-            color = "#000"
+            title='SIGN IN'
+            backgroundColor='white'
+            color = "white"
             />
       </View>
       <TouchableOpacity>
       <View style={{padding:20}}>
-      <Text style={{color:'white',fontSize:20}}> SIGN UP WITH 
-        <AntDesign name="google" size={24} color="yellow" />
-      </Text>
-      <Text style={{color:'white',fontSize:20,borderRadius:25}}> OR    
-      <FontAwesome name="apple" size={50} color="white"  />
+      <Text style={{color:'white',fontSize:20}}> SIGN UP WITH    <AntDesign name="google" size={24} color="yellow" /> </Text>
+      <Text style={{color:'white',fontSize:15,alignSelf:'center'}}>    
+         <FontAwesome name="apple" size={50} color="white"  />
       </Text>
       </View>
       </TouchableOpacity>
@@ -67,12 +66,13 @@ export default function Login({navigation}) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex:1,
     backgroundColor: '#FFF',
     alignItems: 'center',
   },
   input: {
-    backgroundColor: '#e8e9eb',
+    backgroundColor: 'white',
+    textShadowColor:'black',
     borderRadius: 20,
     padding:25,
     marginTop: 40,
