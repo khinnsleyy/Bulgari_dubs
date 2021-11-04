@@ -1,10 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet,Image,TouchableOpacity,ScrollView ,Text, View } from 'react-native';
-import Casioshop from './Casio';
-import Cavemanshop from './Cavemanshop';
-import Bulgarishop from './Bulgari';
-import Rolexshop from './Rolexshop';
+
 
 
 export default function Home({navigation}) {
@@ -14,7 +11,7 @@ export default function Home({navigation}) {
         <Text style={{fontSize:30}}>Welcome Bulgari_dubs!</Text>
       </View>
         <View style ={{backgroundColor:'#a66874',padding:8,borderRadius:30}}>
-        <Text style={{fontSize:25, color:'white',fontWeight: 'bold'}}>Choose Your Brand</Text>
+         <Text style={{fontSize:25, color:'white',fontWeight: 'bold'}}>Choose Your Brand</Text>
         </View>
       <View>
         <TouchableOpacity onPress={() => navigation.navigate('Bulgari ')}>
@@ -28,40 +25,40 @@ export default function Home({navigation}) {
         </Text>
         </TouchableOpacity>
       </View>
-        <View>
-          <TouchableOpacity onPress={() => navigation.navigate('Rolex')}>
+      <View>
+        <TouchableOpacity onPress={() => navigation.navigate('Rolex')}>
           <Image
             fadeDuration={1000} 
             style={{width:370,height:130}}
             resizeMode='contain'
             source={require('../assets/kk.jpg')}/>
-        <Text style={{alignSelf:'center'}}>
-          Rolex
-        </Text>
-          </TouchableOpacity>
-        </View >
+          <Text style={{alignSelf:'center'}}>
+            Rolex
+          </Text>
+       </TouchableOpacity>
+      </View >
       <View>
         <TouchableOpacity onPress={() => navigation.navigate('Caveman')}>
-        <Image 
+          <Image 
             fadeDuration={1000} 
             style={{width:370,height:130,}}
             resizeMode='contain'
             source={require('../assets/kk5.jpg')}/>
-        <Text style={{alignSelf:'center'}}>
-          Caveman
-        </Text>
+          <Text style={{alignSelf:'center'}}>
+            Caveman
+          </Text>
         </TouchableOpacity>
       </View>
       <View>
         <TouchableOpacity onPress={() => navigation.navigate('Casio')}>
-        <Image 
+          <Image 
             fadeDuration={1000} 
             style={{width:370,height:130}}
             resizeMode='contain'
             source={require('../assets/kk2.jpg')}/>
-        <Text style={{alignSelf:'center'}}>
-          Casioshop
-        </Text>
+          <Text style={{alignSelf:'center'}}>
+            Casioshop
+          </Text>
         </TouchableOpacity>
       </View>
       
@@ -73,6 +70,7 @@ export default function Home({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    borderRadius:25,
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
