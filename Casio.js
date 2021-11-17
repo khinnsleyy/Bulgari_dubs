@@ -42,7 +42,7 @@ const WATCHcasio =  [{
 
 const renderItem = ({ item }) => (
   <View style={styles.casiowatches}> 
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate('ShoppingCart')}>
       <View style={styles.casiowatches}>
     <Image resizeMode='contain' style={{height:300,width:400}} source={{uri:item.picture}}/>
     <Text style={styles.itemstyle}>{item.title}</Text>

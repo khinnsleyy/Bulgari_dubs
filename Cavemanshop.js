@@ -42,7 +42,7 @@ const WATCHcaveman =  [{
 
 const renderItem = ({ item }) => (
   <View style={styles.cavemanwatches}>
-    <TouchableOpacity>
+    <TouchableOpacity >
       <View style={styles.cavemanwatches}>
     <Image resizeMode='contain' style={{height:300,backgroundColor:'white',width:400}} source={{uri:item.picture}}/>
     <Text style={styles.itemstyle}>{item.title}</Text>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   cavemanwatches: {
-    backgroundColor: 'yellow',
+    backgroundColor: 'grey',
     alignItems: 'center',
     justifyContent: 'center',
   },

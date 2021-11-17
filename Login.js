@@ -45,7 +45,7 @@ export default function Login({navigation}) {
             onPress={() => navigation.navigate('Home')}
             title='SIGN IN'
             backgroundColor='white'
-            color = "white"
+            color = "brown"
             />
       </View>
       <TouchableOpacity>

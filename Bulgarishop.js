@@ -41,15 +41,15 @@ const WATCHbulgari =  [{
 ];
 
 const renderItem = ({ item }) => (
+  
   <View style={styles.bulgariwatches}>
-    <TouchableOpacity>
-      <View style={styles.bulgariwatches}>
+    <TouchableOpacity >
         <Image resizeMode='contain' style={{height:300,width:400}} source={{uri:item.picture}}/>
         <Text style={styles.itemstyle}>{item.title}</Text>
         <Text>{item.price}</Text>
-      </View>
     </TouchableOpacity>
   </View>
+  
 );
 
 export default function Bulgarishop() {

@@ -78,6 +78,7 @@ export default function Rolexshop() {
         </View>
         </TouchableOpacity>
       </View>
+  
       <FlatList
         data={WATCHrolex}
         renderItem={renderItem}
